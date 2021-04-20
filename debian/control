@@ -1,0 +1,18 @@
+Source: glasscoder
+Section: unknown
+Priority: optional
+Maintainer: Alejandro Olivan Alvarez <alejandro.olivan.alvarez@gmail.com>
+Build-Depends: debhelper-compat (= 13), autotools-dev
+Standards-Version: 4.5.1
+Homepage: https://github.com/ElvishArtisan/GlassCoder
+Vcs-Browser:https://github.com/ElvishArtisan/GlassCoder
+Vcs-Git: https://github.com/ElvishArtisan/GlassCoder
+Rules-Requires-Root: no
+
+Package: glasscoder
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsamplerate0, libtag1v5, libfdk-aac2, libmp3lame0, libmad0, libvorbis0a, libopus0, libtwolame0, libsndfile1
+Recommends: libasound2
+Suggests: libjack-jackd2-0, asihpi-dkms-4
+Description: GlassCoder is a minimalist audio encoder
+ GlassCoder is a minimalist audio encoder for IceCast and Shoutcast streaming servers as well as HTTP Live Streaming (HLS)
